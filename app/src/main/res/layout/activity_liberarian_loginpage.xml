@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C3D2E">
+
+    <!-- Top Layout -->
+    <LinearLayout
+        android:id="@+id/topContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Library Image -->
+
+        <!-- App Title -->
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="132dp"
+            android:contentDescription="Library Image"
+            android:src="@drawable/libraryimge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LibroAI"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FAF7F4"
+            android:layout_marginTop="12dp" />
+
+        <!-- Email -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Email or Phone"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:paddingHorizontal="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D6C7B5" />
+
+        <!-- Password -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D6C7B5" />
+
+        <!-- Forgot Password -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textSize="12sp"
+            android:textColor="#D6C7B5"
+            android:layout_marginEnd="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- Bottom Section pinned to bottom -->
+    <!-- Bottom Section pinned to bottom -->
+    <LinearLayout
+        android:id="@+id/bottomSection"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_curved"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="32dp">
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_dark"
+            android:text="Login"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <!-- OR -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="or"
+            android:textColor="#5C3D2E"
+            android:textSize="14sp" />
+
+        <!-- Create Account -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createAccountButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_light"
+            android:text="Create an account"
+            android:textAllCaps="false"
+            android:textColor="#5C3D2E" />
+    </LinearLayout>
+
+</RelativeLayout>
